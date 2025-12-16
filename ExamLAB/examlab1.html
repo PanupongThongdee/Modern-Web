@@ -5,195 +5,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExamLab1</title>
 </head>
-<body>
-    <font face="Tahoma" size="2" color="#606770">
+<body bgcolor="gray">
     <header>
-    <table border="0" width="95%">
-    <tr>
-        <td align="left">
-            <h3>สมัครสมาชิก</h3>
-            <p>ง่ายและเร็ว</p>
-        </td>
-        <td align="right">
-             <p>X</p>
-        </td>
-        
-    </tr>
-    </table>
-    <hr>
-    </header>
-
-<main>
-    <br><br>
-    <form>
-        
-        <input type="text" name="firstName" id="firstName" placeholder="ชื่อ">
-        &nbsp;
-        <input type="text" name="lastName" id="lastName" placeholder="นามสกุล">
-        <br>
-        <br>
-        <input type="text" name="phone" id="phone" placeholder="หมายเลขโทรศัพท์หรืออีเมล" style="width: 35%;">
-        <br>
-        <br>
-        <input type="password" name="password" id="password" placeholder="รหัสผ่านใหม่" style="width: 35%;">
-        <br>
-        <br>
-       
-
-        <label>วันเกิด</label><br>
-         <select name="day">
-        <option value="day1">1</option>
-        <option value="day2">2</option>
-        <option value="day3">3</option>
-        <option value="day4">4</option>
-        <option value="day5">5</option>
-        <option value="day6">6</option>
-        <option value="day7">7</option>
-        <option value="day8">8</option>
-        <option value="day9">9</option>
-        <option value="day10">10</option>
-        <option value="day11">11</option>
-        <option value="day12">12</option>
-        <option value="day13">13</option>
-        <option value="day14">14</option>
-        <option value="day15">15</option>
-        <option value="day16">16</option>
-        <option value="day17">17</option>
-        <option value="day18">18</option>
-        <option value="day19">19</option>
-        <option value="day20">20</option>
-        <option value="day21">21</option>
-        <option value="day22">22</option>
-        <option value="day23">23</option>
-        <option value="day24">24</option>
-        <option value="day25">25</option>
-        <option value="day26">26</option>
-        <option value="day27">27</option>
-        <option value="day28">28</option>
-        <option value="day29">29</option>
-        <option value="day30">30</option>
-        <option value="day31">31</option>
-        
-        
-    </select>
-      <select name="month">
-        <option value="month1">มกราคม</option>
-        <option value="month2">กุมภาพันธ์</option>
-        <option value="month3">มีนาคม</option>
-        <option value="month4">เมษายน</option>
-        <option value="month5">พฤษภาคม</option>
-        <option value="month6">มิถุนายน</option>
-         <option value="month7">กรกฏาคม</option>
-         <option value="month8">สิงหาคม</option>
-         <option value="month9">กันยายน</option>
-         <option value="month10">ตุลาคม</option>
-         <option value="month11">ธันวาคม</option>
-    </select>
-     <select name="year">
-        <option value="year1">2022</option>
-        <option value="year2">2021</option>
-        <option value="year3">2020</option>
-        <option value="year4">2019</option>
-        <option value="year5">2018</option>
-        <option value="year6">2017</option>
-        <option value="year7">2016</option>
-    </select>
-    <br>
-    <br>
-    
-    <!-- ======================================== -->
-   <h4>เพศ</h4><br>
-<table border="0" cellpadding="4" cellspacing="0" width="50%" >
-    <tr>
-        <td width="50%">
-            <table border="1" cellspacing="0" cellpadding="6" width="100%">
-                <tr>
-                    <td>
-                        <table  border="0"  cellpadding="0" width="100%">
-
-                            <tr>
-                                <td align="left">
-                                    <label>หญิง</label>
-                                </td>
-                                <td align="right">
-                                    <input type="radio" name="gender" value="woman">
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </td>
-        <td width="1%">
-
-        </td>
-       <td width="50%">
-        <table  border="1" cellspacing="0" cellpadding="6" width="100%">
+        <table border="0" align="center" callpadding="4" callspacing="3" width="500" bgcolor="#FFF" >
             <tr>
+                <th align="left" width="33%">สมัคร</th>
+                <th></th>
+                <th align="right">x</th>
+            </tr>
+            <tr>
+                <td colspan="2" align="left"><p>ง่ายและเร็ว</p></td>
+            </tr>
+            <tr>
+                <th colspan="2"></th>
+            </tr>
+            
+            <tr>
+                
                 <td>
-                    <table  border="0"  cellpadding="0" width="100%">
-                        <tr>
-                        <td align="left">
-                            <label>ชาย</label>
+                    <form>
+                        <table>
+                            <tr>
+                                <th><input type="text" name="firstName" id="firstName" placeholder="ชื่อ"></th>
+                                <th>
+                                    <input type="text" name="lastName" id="lastName" placeholder="นามสกุล">
+                                </th>
+                            </tr>
+                                <tr>
+                                    <td><input type="text" name="phone" id="phone" placeholder="หมายเลขโทรศัพท์หรืออีเมล" ></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="password" name="password" id="password" placeholder="รหัสผ่านใหม่" ></td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <tr>
+                                            <td><p>วันเกิด</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                    
+                                                <select name="day">
+                                                <option value="day1">1</option>
+                                                <option value="day2">2</option>
+                                                <option value="day3">3</option>
+                                                <option value="day4">4</option>
+                                                <option value="day5">5</option>
+                                                <option value="day6">6</option>
+                                                <option value="day7">7</option>
+                                                <option value="day8">8</option>
+                                                <option value="day9">9</option>
+                                                <option value="day10">10</option>
+                                                <option value="day11">11</option>
+                                                <option value="day12">12</option>
+                                                <option value="day13">13</option>
+                                                <option value="day14">14</option>
+                                                <option value="day15">15</option>
+                                                <option value="day16">16</option>
+                                                <option value="day17">17</option>
+                                                <option value="day18">18</option>
+                                                <option value="day19">19</option>
+                                                <option value="day20">20</option>
+                                                <option value="day21">21</option>
+                                                <option value="day22">22</option>
+                                                <option value="day23">23</option>
+                                                <option value="day24">24</option>
+                                                <option value="day25">25</option>
+                                                <option value="day26">26</option>
+                                                <option value="day27">27</option>
+                                                <option value="day28">28</option>
+                                                <option value="day29">29</option>
+                                                <option value="day30">30</option>
+                                                <option value="day31">31</option>
+                                            </select>
+                                            <select name="month">
+                                                <option value="month1">มกราคม</option>
+                                                <option value="month2">กุมภาพันธ์</option>
+                                                <option value="month3">มีนาคม</option>
+                                                <option value="month4">เมษายน</option>
+                                                <option value="month5">พฤษภาคม</option>
+                                                <option value="month6">มิถุนายน</option>
+                                                <option value="month7">กรกฏาคม</option>
+                                                <option value="month8">สิงหาคม</option>
+                                                <option value="month9">กันยายน</option>
+                                                <option value="month10">ตุลาคม</option>
+                                                <option value="month11">ธันวาคม</option>
+                                            </select>
+                                            <select name="year">
+                                                <option value="year1">2022</option>
+                                                <option value="year2">2021</option>
+                                                <option value="year3">2020</option>
+                                                <option value="year4">2019</option>
+                                                <option value="year5">2018</option>
+                                                <option value="year6">2017</option>
+                                                <option value="year7">2016</option>
+                                            </select>
+                                            </td>
+                                            <tr><td><h5>เพศ</h5></td></tr>
+                                        
+                      <tr>
+                        <!-- หญิง -->
+                        <td width="50%">
+                          <table border="1" width="100%" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td>
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="left">
+                                      <font face="Tahoma" size="2">หญิง</font>
+                                    </td>
+                                    <td align="right">
+                                      <input type="radio" name="gender" value="female">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
                         </td>
-                            <td align="right">
-                                <input type="radio" name="gender" value="man">
-                            </td>
+
+                        <!-- ชาย -->
+                        <td width="50%">
+                          <table border="1" width="100%" cellpadding="6" cellspacing="0">
+                            <tr>
+                              <td>
+                                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td align="left">
+                                      <font face="Tahoma" size="2">ชาย</font>
+                                    </td>
+                                    <td align="right">
+                                      <input type="radio" name="gender" value="male">
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td width="60%" colspan="4"><p>เมื่อคลิ๊ก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุ๊กกี้ของเรา คุณ อาจจะได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือกไม่รับได้ในภายหลัง</p></td>
+                      </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="submit">เสร็จสิ้น</button></td>
+                            <td></td>
                         </tr>
                     </table>
-                </td>
-            </tr>
-        </table>
-       </td>
-</tr>
-</table>
-
-    <h5>เมื่อคลิ๊ก สมัคร แสดงว่าคุณยอมรับข้อกำหนด นโยบายข้อมูล และนโยบายคุ๊กกี้ของเรา คุณ อาจจะได้รับการแจ้งเตือนทาง SMS จากเราและสามารถเลือกไม่รับได้ในภายหลัง</h5>
-    <br>
-    <br>
-
-    <table border="0" cellspacing="0" cellpadding="6" width="100%" >
-        <tr>
-            <td>
-               <table border="0" cellspacing="0" cellpadding="6" width="10%"  >
-                <tr>
-                    <td>
-                        <table border="0" width="100%" >
-                            <tr>
-                                <td width="5%">
-                                    
-                                </td>
-                                <td width="50%">
-                                    <button type="submit">สมัคร</button>
-                                </td>
-                            </tr>
-                        </table>
-                        
-                            </td>
-                            <td>
-                                
-                            </td>
-                       
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-               </table> 
-
-            </td>
-        </tr>
-    </table>
-   
+                    
 
 
-
-
-
-    </form>
-
-
-</main>
-</font>
-
+    </header>
+    <main>
+        
+    </main>
+    
 </body>
 </html>
