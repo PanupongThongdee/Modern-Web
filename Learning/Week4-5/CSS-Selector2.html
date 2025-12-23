@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Selector</title>
+    <style>
+        p{
+            color: red;
+            background-color: #ffe5e5;
+            cursor: pointer;
+        }
+        input[type="text"]{
+            border: 2px solid blue;
+            padding: 8px;
+            border: radius 5px; ;
+        }
+
+        input[type="text"]{
+            border-color: rgb(255, 0, 128);
+            outline: none;
+            background-color: #fff0fa;
+        }
+
+        body{
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Psudo-class :hover</h2>
+    <p>นำเม้าท์มาวางบนข้อความนี้เพื่อดูเอฟเฟก์</p>
+    <hr>
+    <h2>Attibute Selector [type = text]</h2>
+    <input type="text" placeholder="พิมพข้อความที่นี่"> 
+</body>
+</html>
