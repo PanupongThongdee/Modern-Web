@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template: 
+            "header header" 70px
+            "aside main" 350px
+            "footer footer" 70px /20% 80%;
+            
+            gap: 10px;
+            padding: 10px;
+            background-color: #e0f7f7;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        header{
+            grid-area: header;         
+            background-color: rgb(52, 129, 0);
+            color: white; 
+            text-align: center;
+            line-height: 70px;
+            font-size: 24px;
+        }
+        aside{
+            grid-area: aside;   
+            background-color: rgb(0, 82, 129);
+            color: white; 
+            text-align: center;
+            line-height: 530px;
+            font-size: 24px;
+        }
+        main{
+            grid-area: main;   
+            background-color: rgb(129, 0, 129);
+            color: white; 
+            text-align: center;
+            line-height: 530px;
+            font-size: 24px;
+        }
+        footer{
+             grid-area: footer;   
+            background-color: rgb(0, 129, 86);
+            color: white; 
+            text-align: center;
+            line-height: 70px;
+            font-size: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header>header</header>
+        <aside>aside</aside>
+        <main>main content</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
