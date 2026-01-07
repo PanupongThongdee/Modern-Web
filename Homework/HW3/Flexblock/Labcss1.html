@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+       body{
+        font: 14px 'Tahoma';
+
+       }
+
+       .box{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 150px;
+        background: #d6d6d6;
+        height: 200px;
+      
+       }
+     
+
+       .card{
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px#000;
+        height: 45px;
+        width: 200px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+
+       .card h3 {
+        padding: 0;
+        margin: 0;
+       }
+
+      .card:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+      }
+
+    </style>
+</head>
+<body>
+    <h2>โจทย์ที 1 : ออกแบบ Card Layout ด้วย Flexbox</h2>
+    <div class="box" style="justify-content: center;">
+        
+        <div  class="card">
+            <h3>Card 1</h3>
+            <p>การ์ดใบนี้จะทำให้คุณโชคดี</p>
+        </div>
+
+        <div  class="card">
+            <h3>Card 2</h3>
+            <p>การ์ดใบนี้จะทำให้คุณร่ำรวย</p>
+        </div>
+
+        <div  class="card">
+            <h3>Card 3</h3>
+           <p>การ์ดใบนี้จะทำให้คุณมีความสุข</p>
+        </div>
+    </div>
+</body>
+</html>
