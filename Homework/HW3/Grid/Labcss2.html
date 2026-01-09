@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+       @media (max-width: 600px) {
+        .main-box {
+        grid-template-columns: 1fr;
+         }
+        }
+
+        .main-box{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            gap: 5px;
+            box-sizing: border-box;
+            height: 100vh;
+
+        }
+
+        .column1{
+            background: #17abbe;
+            padding: 10px;
+
+        }
+        .column2{
+            background: #d6d6d6;
+            padding: 10px;
+
+        }
+        .column1 h3 {
+            padding: 30px 0px 0px 10px;
+            margin: 0;
+            color:#fff;
+        }
+        li{
+          list-style: none;
+          margin:0;
+          padding:0px 0px 20px 0px;
+          color: #fff;
+        }
+
+        ul{
+            padding:0px 0px 0px 10px;
+        }
+
+        .column2 h3 {
+            padding: 30px 0px 0px 10px;
+            margin: 0;
+        }
+        .column2 p {
+            padding: 15px 0px 0px 10px;
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .main-box {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+    </style>
 </head>
 <body>
-    
+    <h2 style="text-align: center;">โจทย์ที่2: 2-column Layout ด้วย CSS Grid</h2>
+    <div class="main-box">
+        <div class="column1">
+            <h3>menu</h3>
+            <ul>
+                <li>
+                    About
+                </li>
+                <li>
+                    Services
+                </li>
+                <li>
+                    Contact
+                </li>
+            </ul>
+        </div>
+        <div class="column2">
+            <h3>ยินดีต้อนรับ</h3>
+            <p>นี่คือเนื้อหาหลักของเว็บไซต์</p>
+            <p>ลองทดสอบย่อ-ขยายหน้าจอเพื่อดู Responsive Layout
+</p>
+        </div>
+    </div>
 </body>
 </html>
