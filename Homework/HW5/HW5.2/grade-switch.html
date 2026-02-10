@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork 5.2</title>
+    <style>
+        button{
+        padding: 10px 20px;
+        font-size: 12px;
+        background-color: rgb(240, 93, 48);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+       }
+       button:hover{
+        background-color: rgb(243, 85, 11);
+        opacity: 0.8;
+       }
+
+      #output {
+            font-size: 15px;
+            color: white; 
+            background-color: black;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-line;
+            min-height: 40px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <h2>ตรวจสอบเกรด</h2>
+   
+    <button onclick="checkGrade()">ตรวจสอบเกรด</button>
+     <div id="output"></div>
+    <script>
+        function checkGrade(){
+
+            let score = Math.floor(Math.random() * 101); // สุ่มคะแนนระหว่าง 0-100
+            let grade = "";
+            let comment = "";
+            const output = [];
+
+          switch(true) {
+            case (score >= 80):
+                grade = "A";
+                comment = " ผ่าน";
+                break;
+            case (score >= 70):
+                grade = "B"; 
+                comment = "ผ่าน";
+                break;
+            case (score >= 60):
+                grade = "C";
+                comment = "ผ่าน";
+                break;
+            case (score >= 50):
+                grade = "D";
+                comment = "ผ่าน";
+                break;
+            default:
+                grade = "F";
+                comment = "ไม่ผ่าน";
+          }
+            console.log("คะแนนที่สุ่มได้:", score);
+            output.push("คะแนนที่สุ่มได้: " + score);
+
+            console.log("เกรด:", grade);
+            output.push("เกรด: " + grade);
+
+            console.log("ผลสอบ:", comment);
+            output.push("ผลสอบ: " + comment);
+            
+            document.getElementById("output").textContent = output.join("\n");
+           
+            
+            
+           
+        }
+    </script>
+    </div>
+</body>
+</html>

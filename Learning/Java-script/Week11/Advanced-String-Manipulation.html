@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre id="output">ผลลัพธ์แสดงที่นี่</pre>
+    <button onclick="runStringDemo()">แสดงผลลัพธ์</button>
+
+    <div id="output"></div>
+    <script>
+        function runStringDemo(){
+        
+        const out = [];
+        let text = "JavaScript is awesome!";
+        let firstName = "สมชาย";
+
+        out.push(`สวัสดี ${firstName}!`);
+        console.log(`สวัสดี ${firstName}!`);
+
+        out.push("Text length:", text.length);
+        console.log("Text length:", text.length);
+
+        out.push("Uppercase:", text.toUpperCase());
+        console.log("Uppercase:", text.toUpperCase());
+
+        out.push("Lowercase:", text.toLowerCase());
+        console.log("Lowercase:", text.toLowerCase());
+
+        out.push("Includes:", text.includes("Java"));
+        console.log("includes:", text.includes("Java"));
+
+        out.push("IndexOf:", text.indexOf("Script"));
+        console.log("indexOf:", text.indexOf("Script"));
+
+        out.push("Slice:", text.slice(0, 4));
+        console.log("slice:", text.slice(0, 4));
+
+        out.push("Replace:", text.replace("awesome", "fantastic"));
+        console.log("replace:", text.replace("awesome", "fantastic"));
+
+        document.getElementById("output").textContent = out.join("\n");
+
+        console.clear();
+        out.forEach(line => console.log(">",line));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ตัวอย่างการใช้ตัวแปรใน JavaScript</h1>
+    <button onclick="runDemo()">แสดงตัวแปร</button>
+    <div id="outputBox" style="white-space: pre-wrap; margin-top: 20px; border: 1px solid #000; padding: 10px;"></div>
+    <script>
+        function runDemo(){
+            console.clear();
+            const output = [];
+
+            let Studentname = "สมชาย";
+            let age  = 20;
+            let isStudent = true;
+            const universityName = "มหาวิทยาลัยเทคโนโลยี";
+            output.push("ชื่อ: " + Studentname);
+           console.log("ชื่อ: " , Studentname);
+            output.push("อายุ: " + age);
+           console.log("อายุ: " , age);
+
+            age = 21; // เปลี่ยนอายุ
+            output.push("อายุใหม่: " + age);
+            console.log("อายุใหม่: ", age);
+
+            try{
+                universityName = "มหาวิทยาลัยใหม่"; // จะเกิดข้อผิดพลาด
+            } catch (e) {
+                output.push("Error: " + e.message);
+                console.error(e.message);
+            }
+
+            document.getElementById("outputBox").textContent = output.join("\n");
+        }
+    </script>
+</body>
+</html>

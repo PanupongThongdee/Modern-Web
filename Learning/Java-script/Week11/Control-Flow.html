@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id="outputBox">ผลลัพธ์แสดงที่นี่</pre>
+    <button onclick="runDemo()">Run code</button>
+    <script>
+        function runDemo(){
+            const out = [];
+            let score = 40;
+
+            if(score >= 5){
+                out.push("ผลสอบ :คุณผ่านเกณฑ์");
+                console.log("ผลสอบ :คุณผ่านเกณฑ์");
+            } else {
+                out.push("ผลสอบ :คุณไม่ผ่านเกณฑ์");
+                console.log("ผลสอบ :คุณไม่ผ่านเกณฑ์");
+            }
+
+            for(let i = 0 ; i < 5; i++){
+                out.push("รอบที่: "+ i);
+                console.log("รอบที่: "+ i);
+
+            }
+            document.getElementById("outputBox").textContent = out.join("\n");
+        }
+    </script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre id="outputBox">ผลลัพธ์แสดงที่นี่</pre>
+    <button onclick="runDemo()">Run code</button>
+    <script>
+        function runDemo(){
+            const out = [];
+            let day = 3;
+
+        switch(day){
+            case 1:
+                out.push("วันนี้คือวันจันทร์");
+                console.log("วันนี้คือวันจันทร์");
+                
+                break;
+            case 2:
+                out.push("วันนี้คือวันอังคาร");
+                console.log("วันนี้คือวันอังคาร");
+                break;
+            case 3:
+                out.push("วันนี้คือวันพุธ");
+                console.log("วันนี้คือวันพุธ");
+                break;
+            case 4:
+                out.push("วันนี้คือวันพฤหัสบดี");
+                console.log("วันนี้คือวันพฤหัสบดี");
+                break;
+            case 5:
+                out.push("วันนี้คือวันศุกร์");
+                console.log("วันนี้คือวันศุกร์");
+                break;
+            case 6:
+                out.push("วันนี้คือวันเสาร์");
+                console.log("วันนี้คือวันเสาร์");
+                break;
+            case 7:
+                out.push("วันนี้คือวันอาทิตย์");
+                console.log("วันนี้คือวันอาทิตย์");
+                break;
+            default:
+                out.push("ไม่มีวันดังกล่าว");
+                console.log("ไม่มีวันดังกล่าว");
+        }
+           document.getElementById("outputBox").textContent = out.join("\n");
+    }
+    </script>
+</body>
+</html>

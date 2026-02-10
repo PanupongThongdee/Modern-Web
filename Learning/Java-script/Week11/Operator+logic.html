@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id="output">ผลลัพธ์แสดงที่นี่</pre>
+    <button onclick="runLogicDemo()">แสดงผลลัพธ์</button>
+    <script>
+        function runLogicDemo(){
+             const out = [];
+
+            let a = 10;
+            let b = 3;
+          
+            out.push("1) Arithmetic Operators");
+            out.push("10 + 3 =", a + b);
+            out.push("10 - 3 =", a - b);
+            out.push("10 * 3 =", a * b);
+            out.push("10 / 3 =", a / b);
+            out.push("10 % 3 =", a % b);
+            out.push("=================");
+
+            out.push("2) Comparison Operators");
+            out.push("5 > 3:", (5 > 3));
+            out.push("5 == 5:", (5 == 5));
+            out.push("5 === '5':", (5 === '5'));
+            out.push("=================");
+           
+
+            out.push("3) Logical Operators");
+            out.push("true && false:", (true && false));
+            out.push("true || false:", (true || false));
+            out.push("!true:", (!true));
+            out.push("=================");
+
+            let x = 10;
+            out.push("4) Assignment Operators");
+            out.push("x = 10 --> x += 5 ="+ (x += 5));
+            out.push("x -= 3 = "+ (x -= 3));
+            out.push("x *= 2 = "+ (x *= 2));
+            out.push("=================");
+
+            let y = 5;
+            out.push("5) Increment and Decrement Operators");
+            out.push("y = 5 --> Y++ =", (y++));
+            out.push("หลัง y++ ค่า y", y);
+            out.push("Y-- =", (y--));
+            out.push("หลัง y-- ค่า y", y);
+            out.push("=================");
+
+            let age = 18;
+            let result = (age >= 18) ? "ผู้ใหญ่" : "เด็ก";
+            out.push("6) Ternary Operator");
+            out.push("age = 18 --> result =" + result);
+            out.push("=================");
+
+
+            document.getElementById("output").textContent = out.join("\n");
+
+            console.clear();
+            out.forEach(line => console.log(line));
+        }
+    </script>
+</body>
+</html>
