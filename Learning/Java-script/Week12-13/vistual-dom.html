@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>การทดสอบประสิทธิภาพ JavaScript</h2>
+    
+ 
+    <h3>รายการแบบ Normal</h3>
+    <ul id="list-normal"></ul>
+
+    <h3>รายการแบบ Fragment</h3>
+    <ul id="listFragment"></ul>
+
+    <button onclick="testLoop()">ทดสอบความเร็วของ Loop</button>
+    <button onclick="runTest()">ทดสอบความเร็วของ Loop</button>
+
+    <script>
+        function testLoop(){
+            console.time("Loop 1M");
+            let sum = 0;
+            for(let i = 1 ; i < 1000000 ; i++){
+                sum += i ;
+            }
+            console.timeEnd("Loop 1M");
+            alert("ดูผลลัพธ์ได้ใน Develop Console");
+        }
+
+        function runTest(){
+            const listNormal = document.getElementById("list-normal");
+            const listFragment = document.getElementById("listFragment");
+
+            listNormal.innerHTML = "";
+            listFragment.innerHTML = "";
+
+            console.time("Normal DOM");
+                for(let i = 0; i < 1000 ;i++){
+                    const li = document.createElement("li");
+                  li.textContent = `Item ${i}`;
+                  listNormal.appendChild(li);
+                }
+                console.timeEnd("Normal DOM");
+
+                const fragment = document.createDocumentFragment();
+                 console.time("Fragment DOM");
+                for(let i = 0; i < 1000 ;i++){
+                    const li = document.createElement("li");
+                  li.textContent = `Item ${i}`;
+                  fragment.appendChild(li);
+                }
+                listFragment.appendChild(fragment);
+                console.timeEnd("Fragment DOM");
+
+                alert("เสร็จสิ้น!  ดูเวลาที่วัดได้ใน Developer Console");
+        }
+    </script>
+</body>
+</html>
